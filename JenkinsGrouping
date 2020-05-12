@@ -1,0 +1,15 @@
+node
+{
+stage('Checkout')
+{
+
+}
+stage('Build')
+{
+echo "Build"
+}
+stage('End')
+{
+echo "End"
+}
+}
