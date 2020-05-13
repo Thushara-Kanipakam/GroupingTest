@@ -1,0 +1,15 @@
+node
+{
+stage('Checkout')
+{
+checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Thushara-Kanipakam/GroupingTest']]])
+}
+stage('Build')
+{
+echo "build"
+}
+stage('End')
+{
+echo "End"
+}
+}
